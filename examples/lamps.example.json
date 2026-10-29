@@ -1,0 +1,7 @@
+{
+  "lamps": [
+    {"label": "left", "name": "Magic-EXAMPLE_LEFT"},
+    {"label": "middle", "name": "Magic-EXAMPLE_MIDDLE"},
+    {"label": "right", "name": "Magic-EXAMPLE_RIGHT"}
+  ]
+}

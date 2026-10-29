@@ -1,0 +1,27 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rollei-lumen-ble"
+version = "0.2.0"
+description = "Local BLE control for tested Rollei Lumen Pocket Bi-Color V2 lights"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {file = "LICENSE"}
+authors = [{name = "Benjamin Danzer", email = "benjamin.danzer@tha.de"}]
+keywords = ["rollei", "lumen", "bluetooth-le", "bleak", "lighting"]
+dependencies = ["bleak>=3.0.2,<4"]
+
+[project.urls]
+Homepage = "https://github.com/profbd/rollei-lumen-ble"
+Issues = "https://github.com/profbd/rollei-lumen-ble/issues"
+Changelog = "https://github.com/profbd/rollei-lumen-ble/blob/main/CHANGELOG.md"
+
+[project.scripts]
+rollei-lumen = "rollei_lumen:main"
+lumen-studio = "studio_gui:main"
+
+[tool.setuptools]
+package-dir = {"" = "src"}
+py-modules = ["rollei_lumen", "studio_model", "studio_ble", "studio_gui"]

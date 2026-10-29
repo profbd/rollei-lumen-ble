@@ -1,0 +1,28 @@
+name: Bug report
+description: Report an installation, interface or light-control problem.
+title: "[Bug] "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What happened?
+      description: Include steps to reproduce, expected behavior and actual behavior.
+    validations:
+      required: true
+  - type: input
+    id: environment
+    attributes:
+      label: Operating system and Python version
+      placeholder: macOS / Windows version, Python version
+    validations:
+      required: true
+  - type: input
+    id: light
+    attributes:
+      label: Light model and number of lights
+      placeholder: Rollei Lumen Pocket Bi-Color V2, 3 lights
+  - type: textarea
+    id: logs
+    attributes:
+      label: Error message or screenshot
+      description: Remove local Bluetooth identifiers and private paths. Do not attach raw Bluetooth recordings.
